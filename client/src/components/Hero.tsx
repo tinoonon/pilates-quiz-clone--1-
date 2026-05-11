@@ -15,26 +15,26 @@ export default function Hero({ onStartQuiz }: HeroProps) {
       {/* Top accent bar */}
       <div className="w-full h-1 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-400" />
 
-      <div className="flex-1 flex items-center justify-center px-4 py-8">
+      <div className="flex-1 flex items-center justify-center px-4 py-6 sm:py-8">
         <div className="max-w-lg w-full">
           {/* Title */}
-          <div className="text-center mb-6 animate-fadeInSlideUp">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight uppercase">
+          <div className="text-center mb-4 sm:mb-6 animate-fadeInSlideUp">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight uppercase px-2">
               ELIMINE AS <span className="text-orange-500">ESPINHAS</span> E TENHA A{' '}
               <span className="text-orange-500">PELE LIMPA</span>
             </h1>
           </div>
 
           {/* Subtitle */}
-          <div className="text-center mb-8 animate-fadeInSlideUp" style={{ animationDelay: '100ms' }}>
-            <p className="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg font-bold text-sm uppercase tracking-wide">
+          <div className="text-center mb-6 sm:mb-8 animate-fadeInSlideUp px-2" style={{ animationDelay: '100ms' }}>
+            <p className="inline-block bg-orange-500 text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-xs sm:text-sm uppercase tracking-wide">
               COM NOSSO MÉTODO PERSONALIZADO EM CASA
             </p>
           </div>
 
           {/* Hero Image */}
-          <div className="mb-8 animate-fadeInScale" style={{ animationDelay: '200ms' }}>
-            <div className="relative rounded-2xl overflow-hidden shadow-lg" style={{ height: '350px' }}>
+          <div className="mb-6 sm:mb-8 animate-fadeInScale px-2" style={{ animationDelay: '200ms' }}>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg" style={{ height: '280px', maxHeight: '350px' }}>
               <img
                 src="/images/skin-transformation.png"
                 alt="Transformação da pele - Antes e Depois"
@@ -46,31 +46,31 @@ export default function Hero({ onStartQuiz }: HeroProps) {
           </div>
 
           {/* Age Selection */}
-          <div className="text-center mb-6 animate-fadeInSlideUp" style={{ animationDelay: '300ms' }}>
-            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+          <div className="text-center mb-4 sm:mb-6 animate-fadeInSlideUp px-2" style={{ animationDelay: '300ms' }}>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
               Desafio específico para sua idade e objetivo:
             </h2>
-            <p className="text-sm text-gray-500">Escolha uma opção abaixo:</p>
+            <p className="text-xs sm:text-sm text-gray-500">Escolha uma opção abaixo:</p>
           </div>
 
           {/* Age Buttons */}
-          <div className="grid grid-cols-2 gap-3 mb-8">
+          <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-6 sm:mb-8 px-2">
             {ageOptions.map((option, index) => (
               <button
                 key={option.id}
                 onClick={() => onStartQuiz(option.id)}
-                className="quiz-option flex items-center gap-3 p-4 rounded-2xl border-2 border-orange-300 bg-white text-left font-semibold text-gray-800 hover:bg-orange-50 animate-optionEnter"
+                className="quiz-option flex items-center gap-2 sm:gap-3 p-3 sm:p-4 rounded-2xl border-2 border-orange-300 bg-white text-left font-semibold text-gray-800 hover:bg-orange-50 animate-optionEnter"
                 style={{ animationDelay: `${400 + index * 80}ms` }}
               >
-                <span className="text-xl">{option.emoji}</span>
-                <span className="text-sm">{option.label}</span>
+                <span className="text-lg sm:text-xl">{option.emoji}</span>
+                <span className="text-xs sm:text-sm">{option.label}</span>
               </button>
             ))}
           </div>
 
           {/* Info Banner */}
-          <div className="animate-fadeInSlideUp" style={{ animationDelay: '700ms' }}>
-            <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 rounded-2xl px-5 py-3 text-center mb-4">
+          <div className="animate-fadeInSlideUp px-2" style={{ animationDelay: '700ms' }}>
+            <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 rounded-2xl px-4 sm:px-5 py-3 text-center mb-4">
               <p className="text-xs text-gray-700 leading-relaxed">
                 Faça esse teste para ter um{' '}
                 <strong className="text-gray-900">protocolo específico para seu caso</strong>. Ao final

@@ -42,25 +42,25 @@ export default function QuizQuestion({
     <div className="animate-fadeInSlideUp" key={question.id}>
       {/* Question Emoji */}
       {question.emoji && (
-        <div className="text-center mb-4">
-          <span className="text-5xl animate-float inline-block">{question.emoji}</span>
+        <div className="text-center mb-3 sm:mb-4">
+          <span className="text-4xl sm:text-5xl animate-float inline-block">{question.emoji}</span>
         </div>
       )}
 
       {/* Question Title */}
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 text-center leading-tight">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2 text-center leading-tight px-2">
         {question.question}
       </h2>
 
       {/* Subtitle */}
       {question.subtitle && (
-        <p className="text-center text-sm text-gray-500 mb-6">
+        <p className="text-center text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6 px-2">
           {question.subtitle}
         </p>
       )}
 
       {/* Options */}
-      <div className="space-y-3 mt-6">
+      <div className="space-y-2 sm:space-y-3 mt-4 sm:mt-6">
         {question.options.map((option, index) => {
           const isSelected = isMultiple
             ? multipleSelected.includes(option.id)
@@ -74,7 +74,7 @@ export default function QuizQuestion({
             >
               {isMultiple ? (
                 <label
-                  className={`quiz-option flex items-center gap-4 p-4 rounded-2xl border-2 bg-white cursor-pointer ${
+                  className={`quiz-option flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-2xl border-2 bg-white cursor-pointer ${
                     isSelected
                       ? 'selected border-orange-400'
                       : 'border-gray-200 hover:border-orange-300'
@@ -83,14 +83,14 @@ export default function QuizQuestion({
                   <Checkbox
                     checked={isSelected}
                     onCheckedChange={() => handleMultipleToggle(option.id)}
-                    className="h-6 w-6 rounded-md"
+                    className="h-5 w-5 sm:h-6 sm:w-6 rounded-md flex-shrink-0"
                   />
-                  <div className="flex-1 flex items-center gap-3">
+                  <div className="flex-1 flex items-center gap-2 sm:gap-3 min-w-0">
                     {option.emoji && (
-                      <span className="option-emoji text-2xl flex-shrink-0">{option.emoji}</span>
+                      <span className="option-emoji text-xl sm:text-2xl flex-shrink-0">{option.emoji}</span>
                     )}
-                    <div>
-                      <span className="text-base font-semibold text-gray-800">
+                    <div className="min-w-0 flex-1">
+                      <span className="text-sm sm:text-base font-semibold text-gray-800 block">
                         {option.label}
                       </span>
                       {option.description && (
@@ -102,14 +102,14 @@ export default function QuizQuestion({
               ) : (
                 <button
                   onClick={() => handleSingleSelect(option.id)}
-                  className="quiz-option w-full p-4 rounded-2xl border-2 border-gray-200 bg-white hover:border-orange-300 text-left"
+                  className="quiz-option w-full p-3 sm:p-4 rounded-2xl border-2 border-gray-200 bg-white hover:border-orange-300 text-left"
                 >
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2 sm:gap-3 min-w-0">
                     {option.emoji && (
-                      <span className="option-emoji text-2xl flex-shrink-0">{option.emoji}</span>
+                      <span className="option-emoji text-xl sm:text-2xl flex-shrink-0">{option.emoji}</span>
                     )}
-                    <div className="flex-1">
-                      <span className="text-base font-semibold text-gray-800">
+                    <div className="flex-1 min-w-0">
+                      <span className="text-sm sm:text-base font-semibold text-gray-800 block">
                         {option.label}
                       </span>
                       {option.description && (
@@ -126,10 +126,10 @@ export default function QuizQuestion({
 
       {/* CONTINUAR button ONLY for multiple-select */}
       {isMultiple && multipleSelected.length > 0 && (
-        <div className="mt-6 animate-fadeInSlideUp">
+        <div className="mt-4 sm:mt-6 animate-fadeInSlideUp">
           <button
             onClick={handleMultipleConfirm}
-            className="w-full py-4 rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
+            className="w-full py-3 sm:py-4 rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
           >
             CONTINUAR →
           </button>

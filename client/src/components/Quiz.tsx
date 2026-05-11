@@ -112,7 +112,7 @@ export default function Quiz() {
     <div className="min-h-screen" style={{ background: '#F7F5F2' }}>
       <ProgressBar progress={progress} />
 
-      <div className="container max-w-lg py-12 px-4 pt-16">
+      <div className="container max-w-lg py-8 sm:py-12 px-4 pt-12 sm:pt-16">
         {currentQuestion && (
           <QuizQuestion
             key={currentQuestion.id}
@@ -121,7 +121,7 @@ export default function Quiz() {
           />
         )}
 
-        <div className="mt-10 text-center text-xs text-gray-400 font-medium">
+        <div className="mt-8 sm:mt-10 text-center text-xs text-gray-400 font-medium">
           ✅ TEMPO ESTIMADO: 49 SEGUNDOS
         </div>
       </div>
