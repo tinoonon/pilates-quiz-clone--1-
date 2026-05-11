@@ -41,7 +41,7 @@ function StatsScreen({ answers, onContinue }: { answers: Record<number, string |
             Ótimo! Já identificamos seu perfil de pele
           </h2>
           <p className="text-gray-600 text-sm">
-            Sua pele <strong className="text-orange-600">{skinType}</strong> precisa de um protocolo específico.
+            Sua pele <strong className="text-orange-600">{skinType}</strong> precisa do Segredo Coreano específico.
           </p>
         </div>
 
@@ -98,8 +98,8 @@ function TestimonialScreen({ answers, onContinue }: { answers: Record<number, st
   if (diet === 'unhealthy' || diet === 'very-unhealthy') issues.push('alimentação inflamatória');
 
   const insightText = issues.length > 0
-    ? `Identificamos ${issues.length} fator${issues.length > 1 ? 'es' : ''} que pode${issues.length > 1 ? 'm' : ''} estar piorando suas espinhas: ${issues.join(', ')}.`
-    : 'Seus hábitos estão bons, mas ainda podemos otimizar seu protocolo.';
+    ? `Identificamos ${issues.length} fator${issues.length > 1 ? 'es' : ''} que pode${issues.length > 1 ? 'm' : ''} estar DESTRUINDO sua pele: ${issues.join(', ')}.`
+    : 'Seus hábitos estão bons, mas o Segredo Coreano vai TURBINAR seus resultados.';
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-8" style={{ background: '#F7F5F2' }}>

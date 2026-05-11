@@ -46,13 +46,13 @@ export default function QuizResult({ answers, onContinueToOffer }: QuizResultPro
     const stress = answers[11] as string;
     const routine = answers[8] as string;
     const sunscreen = answers[9] as string;
-    if (diet === 'very-unhealthy' || diet === 'unhealthy') return 'ALIMENTAÇÃO INFLAMATÓRIA';
-    if (stress === 'definitely' || stress === 'yes') return 'ESTRESSE E DESEQUILÍBRIO HORMONAL';
+    if (diet === 'very-unhealthy' || diet === 'unhealthy') return 'ALIMENTAÇÃO DESTRUINDO SUA PELE';
+    if (stress === 'definitely' || stress === 'yes') return 'ESTRESSE CAUSANDO INFLAMAÇÃO CRÔNICA';
     if (routine === 'none' || routine === 'basic') {
-      if (sunscreen === 'never') return 'ROTINA DE CUIDADOS INEXISTENTE';
-      return 'ROTINA DE CUIDADOS INCORRETA';
+      if (sunscreen === 'never') return 'ROTINA INEXISTENTE AGRAVANDO O PROBLEMA';
+      return 'ROTINA INCORRETA PIORANDO AS ESPINHAS';
     }
-    return 'FALTA DE PROTOCOLO ADEQUADO';
+    return 'FALTA DO SEGREDO COREANO';
   }, [answers]);
 
   return (
@@ -124,8 +124,8 @@ export default function QuizResult({ answers, onContinueToOffer }: QuizResultPro
         {/* Solution Banner */}
         <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-2 border-orange-300 rounded-2xl p-5 mb-6 text-center animate-fadeInSlideUp" style={{ animationDelay: '400ms' }}>
           <p className="text-sm text-gray-700">
-            Mas isso tem solução, você precisa ativar o{' '}
-            <strong className="text-gray-900 underline decoration-orange-400 underline-offset-2">PROTOCOLO PELE LIMPA</strong>
+            Mas isso TEM SOLUÇÃO! Você precisa{' '}
+            <strong className="text-gray-900 underline decoration-orange-400 underline-offset-2">DESCOBRIR O SEGREDO COREANO PASSADO POR GERAÇÕES PARA SECAR ESPINHAS</strong>
           </p>
         </div>
 

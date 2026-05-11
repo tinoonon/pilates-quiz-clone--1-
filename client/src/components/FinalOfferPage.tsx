@@ -15,11 +15,11 @@ export default function FinalOfferPage() {
           </div>
 
           <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
-            Seu Protocolo <span className="text-orange-500">Pele Limpa</span> está pronto!
+            O <span className="text-orange-500">Segredo Coreano</span> está pronto para VOCÊ!
           </h1>
 
           <p className="text-sm text-gray-600 leading-relaxed">
-            Com base nas suas respostas, criamos um plano personalizado para eliminar suas espinhas e conquistar a pele que você merece.
+            Com base nas suas respostas, descobrimos o método EXATO passado por gerações para SECAR suas espinhas de vez!
           </p>
         </div>
 
@@ -55,19 +55,19 @@ export default function FinalOfferPage() {
           <ul className="text-sm text-gray-700 space-y-2">
             <li className="flex items-start gap-2">
               <span className="text-green-500 mt-0.5">✅</span>
-              <span>Protocolo completo personalizado para o seu tipo de pele</span>
+              <span>O Segredo Coreano completo personalizado para SUA pele</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-green-500 mt-0.5">✅</span>
-              <span>Rotina passo a passo para fazer em casa</span>
+              <span>Método passo a passo TESTADO por gerações</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-green-500 mt-0.5">✅</span>
-              <span>Lista de produtos acessíveis e eficazes</span>
+              <span>Ingredientes naturais PODEROSOS e acessíveis</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-green-500 mt-0.5">✅</span>
-              <span>Suporte e acompanhamento exclusivo</span>
+              <span>Suporte EXCLUSIVO para GARANTIR seus resultados</span>
             </li>
           </ul>
         </div>
