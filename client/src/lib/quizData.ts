@@ -191,7 +191,7 @@ export const quizQuestions: QuizQuestion[] = [
     emoji: '🧪',
     type: 'single',
     options: [
-      { id: 'never', label: 'Nunca tentei nada', emoji: '🆕' },
+      { id: 'never', label: 'Nunca tentei nada', emoji: '❌' },
       { id: 'few', label: 'Tentei 1 ou 2 coisas', emoji: '📝' },
       { id: 'many', label: 'Tentei vários', emoji: '📚' },
       { id: 'everything', label: 'Tentei de tudo, nada funcionou', emoji: '😤' },
