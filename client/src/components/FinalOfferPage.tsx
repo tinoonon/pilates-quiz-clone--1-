@@ -77,11 +77,11 @@ export default function FinalOfferPage() {
           <p className="text-center text-sm font-semibold text-gray-700 mb-3">
             🎬 Assista e entenda como funciona:
           </p>
-          <div className="relative rounded-2xl overflow-hidden shadow-lg bg-black" style={{ aspectRatio: '16/9' }}>
+          <div className="relative rounded-2xl overflow-hidden shadow-lg bg-black" style={{ aspectRatio: '9/16', maxHeight: '600px', margin: '0 auto' }}>
             <video
               controls
               poster="/images/content.png"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
               preload="metadata"
             >
               <source src="https://cdn.discordapp.com/attachments/1304565472695685121/1503538220862935101/202605111838.mp4?ex=6a045f56&is=6a030dd6&hm=96d3345a47c14f096ac64b996eee99c0b297b9ea67ca3db8b3ae3a2b1c762d94&" type="video/mp4" />
