@@ -132,7 +132,7 @@ export default function QuizResult({ answers, onContinueToOffer }: QuizResultPro
         {/* Transformation Image */}
         <div className="rounded-2xl overflow-hidden shadow-sm mb-4 animate-fadeInSlideUp" style={{ animationDelay: '500ms' }}>
           <img
-            src="/images/testimonial-before-after.png"
+            src="/images/finalantes.png"
             alt="Transformação real - Antes e Depois"
             className="w-full object-cover"
             style={{ maxHeight: '350px' }}
