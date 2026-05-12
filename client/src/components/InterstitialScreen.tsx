@@ -132,9 +132,11 @@ function TestimonialScreen({ answers, onContinue }: { answers: Record<number, st
           />
           <div className="p-5">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-500 flex items-center justify-center text-white font-bold text-sm">
-                {testimonial.name.charAt(0)}
-              </div>
+              <img 
+                src={testimonial.avatar} 
+                alt={testimonial.name}
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <div>
                 <div className="flex gap-0.5 mb-0.5">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
@@ -215,9 +217,11 @@ function HopeScreen({ answers, onContinue, totalQuestions, currentStep }: {
           />
           <div className="p-5">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-white font-bold text-sm">
-                {testimonial.name.charAt(0)}
-              </div>
+              <img 
+                src={testimonial.avatar} 
+                alt={testimonial.name}
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <div>
                 <div className="flex gap-0.5 mb-0.5">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
