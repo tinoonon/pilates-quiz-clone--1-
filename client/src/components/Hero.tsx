@@ -19,9 +19,8 @@ export default function Hero({ onStartQuiz }: HeroProps) {
         <div className="max-w-lg w-full">
           {/* Title */}
           <div className="text-center mb-4 sm:mb-6 animate-fadeInSlideUp">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight uppercase px-2">
-              ELIMINE AS <span className="text-orange-500">ESPINHAS</span> E TENHA A{' '}
-              <span className="text-orange-500">PELE LIMPA</span>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight px-2">
+              O MÉTODO COREANO SIMPLES QUE ESTÁ AJUDANDO MULHERES A <span className="text-orange-500">REDUZIREM ESPINHAS</span> EM ATÉ <span className="text-orange-500">7 DIAS</span>
             </h1>
           </div>
 
