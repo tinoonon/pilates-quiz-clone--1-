@@ -37,7 +37,7 @@ export default function Hero({ onStartQuiz }: HeroProps) {
             <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 rounded-2xl px-4 sm:px-5 py-3 text-center">
               <p className="text-xs text-gray-700 leading-relaxed">
                 Faça esse teste para{' '}
-                <strong className="text-gray-900">Descobrir o Segredo Coreano Passado Por Gerações Para Secar Espinhas</strong>. Ao final
+                <strong className="text-gray-900">Descobrir o Segredo Coreano Inspirado nos Protocolos Coreanos de Cuidados com a Pele Para Secar Espinhas</strong>. Ao final
                 você ganha seu <strong className="text-gray-900">diagnóstico grátis</strong>.
               </p>
             </div>

@@ -125,7 +125,7 @@ export default function QuizResult({ answers, onContinueToOffer }: QuizResultPro
         <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-2 border-orange-300 rounded-2xl p-5 mb-6 text-center animate-fadeInSlideUp" style={{ animationDelay: '400ms' }}>
           <p className="text-sm text-gray-700">
             Mas isso TEM SOLUÇÃO! Você precisa{' '}
-            <strong className="text-gray-900 underline decoration-orange-400 underline-offset-2">DESCOBRIR O SEGREDO COREANO PASSADO POR GERAÇÕES PARA SECAR ESPINHAS</strong>
+            <strong className="text-gray-900 underline decoration-orange-400 underline-offset-2">DESCOBRIR O SEGREDO COREANO INSPIRADO NOS PROTOCOLOS COREANOS DE CUIDADOS COM A PELE PARA SECAR ESPINHAS</strong>
           </p>
         </div>
 

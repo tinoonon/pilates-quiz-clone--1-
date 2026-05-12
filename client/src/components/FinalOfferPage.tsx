@@ -19,7 +19,7 @@ export default function FinalOfferPage() {
           </h1>
 
           <p className="text-sm text-gray-600 leading-relaxed">
-            Com base nas suas respostas, descobrimos o método EXATO passado por gerações para SECAR suas espinhas de vez!
+            Com base nas suas respostas, descobrimos o método EXATO inspirado nos protocolos coreanos de cuidados com a pele para SECAR suas espinhas de vez!
           </p>
         </div>
 
