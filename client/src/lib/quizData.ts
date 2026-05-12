@@ -244,7 +244,7 @@ export const testimonials = [
     name: 'Larissa Mendes',
     age: 20,
     occupation: 'Estudante de Enfermagem',
-    avatar: '/images/avatar-1.png',
+    avatar: '/images/pvalle.png',
     image: '/images/testimonial-before-after.png',
     text: 'Minha pele era cheia de espinhas, principalmente no queixo. Em 2 semanas usando o Segredo Coreano, as inflamações sumiram. Hoje me sinto outra pessoa!',
     rating: 5,

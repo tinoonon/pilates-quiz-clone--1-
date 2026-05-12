@@ -26,10 +26,21 @@ export default function Hero({ onStartQuiz }: HeroProps) {
           </div>
 
           {/* Subtitle */}
-          <div className="text-center mb-6 sm:mb-8 animate-fadeInSlideUp px-2" style={{ animationDelay: '100ms' }}>
+          <div className="text-center mb-4 sm:mb-6 animate-fadeInSlideUp px-2" style={{ animationDelay: '100ms' }}>
             <p className="inline-block bg-orange-500 text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-xs sm:text-sm uppercase tracking-wide">
               COM NOSSO MÉTODO PERSONALIZADO EM CASA
             </p>
+          </div>
+
+          {/* Info Banner - Moved here */}
+          <div className="animate-fadeInSlideUp px-2 mb-6 sm:mb-8" style={{ animationDelay: '150ms' }}>
+            <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 rounded-2xl px-4 sm:px-5 py-3 text-center">
+              <p className="text-xs text-gray-700 leading-relaxed">
+                Faça esse teste para{' '}
+                <strong className="text-gray-900">Descobrir o Segredo Coreano Passado Por Gerações Para Secar Espinhas</strong>. Ao final
+                você ganha seu <strong className="text-gray-900">diagnóstico grátis</strong>.
+              </p>
+            </div>
           </div>
 
           {/* Hero Image */}
@@ -68,22 +79,11 @@ export default function Hero({ onStartQuiz }: HeroProps) {
             ))}
           </div>
 
-          {/* Info Banner */}
-          <div className="animate-fadeInSlideUp px-2" style={{ animationDelay: '700ms' }}>
-            <div className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 rounded-2xl px-4 sm:px-5 py-3 text-center mb-4">
-              <p className="text-xs text-gray-700 leading-relaxed">
-                Faça esse teste para{' '}
-                <strong className="text-gray-900">Descobrir o Segredo Coreano Passado Por Gerações Para Secar Espinhas</strong>. Ao final
-                você ganha seu <strong className="text-gray-900">diagnóstico grátis</strong>.
-              </p>
-            </div>
-
-            {/* Estimated time */}
-            <div className="text-center">
-              <p className="text-xs text-gray-500 font-medium">
-                ✅ TEMPO ESTIMADO: <strong className="text-gray-700">49 SEGUNDOS</strong>
-              </p>
-            </div>
+          {/* Estimated time */}
+          <div className="text-center animate-fadeInSlideUp px-2" style={{ animationDelay: '700ms' }}>
+            <p className="text-xs text-gray-500 font-medium">
+              ✅ TEMPO ESTIMADO: <strong className="text-gray-700">49 SEGUNDOS</strong>
+            </p>
           </div>
         </div>
       </div>
