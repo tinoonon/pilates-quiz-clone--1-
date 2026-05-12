@@ -251,10 +251,10 @@ export const testimonials = [
     result: 'Pele limpa em 14 dias',
   },
   {
-    name: 'Lucas Ferreira',
+    name: 'Bruna Victoria',
     age: 24,
-    occupation: 'Designer Gráfico',
-    avatar: '/images/avatar-3.png',
+    occupation: 'Designer Gráfica',
+    avatar: '/images/bruna.png',
     image: '/images/homemn.png',
     text: 'Gastei mais de R$2.000 em dermatologista e nada funcionava. Com esse método simples, em 3 semanas minhas espinhas praticamente desapareceram. Inacreditável!',
     rating: 5,
