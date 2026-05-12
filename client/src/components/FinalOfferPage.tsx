@@ -78,19 +78,16 @@ export default function FinalOfferPage() {
             🎬 Assista e entenda como funciona:
           </p>
           <div className="relative rounded-2xl overflow-hidden shadow-lg bg-black" style={{ aspectRatio: '16/9' }}>
-            {/* Replace the src below with your actual video URL */}
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Método Pele Limpa - Como Funciona"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full absolute inset-0"
-            />
+            <video
+              controls
+              poster="/images/content.png"
+              className="w-full h-full"
+              preload="metadata"
+            >
+              <source src="https://cdn.discordapp.com/attachments/1304565472695685121/1503538220862935101/202605111838.mp4?ex=6a045f56&is=6a030dd6&hm=96d3345a47c14f096ac64b996eee99c0b297b9ea67ca3db8b3ae3a2b1c762d94&" type="video/mp4" />
+              Seu navegador não suporta a reprodução de vídeos.
+            </video>
           </div>
-          <p className="text-center text-[10px] text-gray-400 mt-2">
-            *Substitua o link acima pelo seu vídeo de vendas
-          </p>
         </div>
 
         {/* CTA Button */}
